@@ -1,38 +1,43 @@
 <!DOCTYPE html>
-<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Havel Hostel</title><script src="https://cdn.tailwindcss.com"></script><style>body{background:#0A0A0F;color:white;font-family:system-ui}</style></head>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Havel Hostel</title><script src="https://cdn.tailwindcss.com"></script><style>body{background:#0A0A0F;color:white;font-family:system-ui}</style></head>
 <body>
 
-<!-- TOP BAR -->
 <nav class="flex justify-between items-center p-4 border-b border-white/10 sticky top-0 bg-black/90 backdrop-blur z-50">
-<div class="flex items-center gap-2 font-bold"><div class="w-9 h-9 border border-[#E8C48A] rounded-md flex items-center justify-center">H</div>HAVEL HOSTEL</div>
+<div class="flex items-center gap-2 font-bold text-sm tracking-widest"><div class="w-9 h-9 border border-[#E8C48A] rounded-md flex items-center justify-center">H</div>HAVEL HOSTEL</div>
 <div class="flex items-center gap-3">
 <a href="contact.html" class="border border-[#E8C48A] text-[#E8C48A] px-5 py-2 rounded-full text-xs font-bold">Book Now</a>
-<button onclick="openMenu()" class="w-9 h-9 border border-white/20 rounded-full flex flex-col items-center justify-center gap-1">
+<button onclick="openMenu()" class="w-9 h-9 bg-white/5 border border-white/10 rounded-full flex flex-col items-center justify-center gap-1">
 <span class="w-4 h-[2px] bg-white"></span><span class="w-4 h-[2px] bg-white"></span><span class="w-4 h-[2px] bg-white"></span>
 </button>
 </div>
 </nav>
 
-<!-- 3 LINE MENU - YE SAB PAGES DIKHAYEGA -->
-<div id="menu" class="hidden fixed inset-0 bg-black/95 z-[60] p-6">
-<div class="flex justify-between items-center"><div class="font-bold">MENU</div><button onclick="closeMenu()" class="w-9 h-9 border border-white/20 rounded-full">✕</button></div>
-<div class="mt-12 flex flex-col gap-5 text-2xl font-bold">
-<a href="index.html" class="text-[#E8C48A]">🏠 Home</a>
-<a href="rooms.html">🛏️ Rooms - Explore Rooms</a>
-<a href="gallery.html">🖼️ Gallery - Virtual Tour</a>
-<a href="community.html">👥 Community - Meet The Gang</a>
-<a href="contact.html">📞 Contact Us</a>
-<div class="border-t border-white/10 pt-5 mt-3">
-<p class="text-xs text-zinc-500 tracking-widest">SETTINGS & MORE</p>
-<a href="contact.html" class="text-sm font-normal text-zinc-400 mt-3 block">⚙️ Settings</a>
-<a href="contact.html" class="text-sm font-normal text-zinc-400 block">🔒 Privacy Policy</a>
-<a href="contact.html" class="text-sm font-normal text-zinc-400 block">📄 Terms</a>
+<!-- LUXURY MENU - FINAL -->
+<div id="menu" class="hidden fixed inset-0 bg-[#0A0A0F] z-[100] p-6">
+<div class="flex justify-between items-center max-w-7xl mx-auto"><div class="text-[11px] tracking-[0.3em] text-zinc-500">MENU</div><button onclick="closeMenu()" class="w-10 h-10 bg-white/5 border border-white/10 rounded-full flex items-center justify-center text-white">✕</button></div>
+<div class="max-w-7xl mx-auto mt-16 flex flex-col">
+<a href="index.html" class="text-5xl font-bold text-[#E8C48A] py-4 border-b border-white/[0.06]">Home</a>
+<a href="rooms.html" class="text-5xl font-bold text-white py-4 border-b border-white/[0.06] hover:text-[#E8C48A]">Rooms</a>
+<a href="gallery.html" class="text-5xl font-bold text-white py-4 border-b border-white/[0.06] hover:text-[#E8C48A]">Gallery</a>
+<a href="community.html" class="text-5xl font-bold text-white py-4 border-b border-white/[0.06] hover:text-[#E8C48A]">Community</a>
+<a href="contact.html" class="text-5xl font-bold text-white py-4 border-b border-white/[0.06] hover:text-[#E8C48A]">Contact</a>
+<div class="mt-16">
+<p class="text-[10px] tracking-[0.3em] text-zinc-500">SETTINGS & MORE</p>
+<div class="flex gap-6 mt-4 text-sm text-zinc-400"><a href="contact.html" class="hover:text-white">Settings</a><a href="#" class="hover:text-white">Privacy</a><a href="#" class="hover:text-white">Terms</a></div>
+</div>
+<p class="text-[10px] text-zinc-600 mt-20">© 2026 HAVEL HOSTEL • Unofficial • Haridwar</p>
 </div>
 </div>
+<script>function openMenu(){document.getElementById('menu').classList.remove('hidden');document.body.style.overflow='hidden'}function closeMenu(){document.getElementById('menu').classList.add('hidden');document.body.style.overflow='auto'}</script>
+
+<!-- HOME CONTENT -->
+<div class="px-6 pt-12 pb-10 max-w-7xl mx-auto">
+<h1 class="text-6xl md:text-7xl font-extrabold leading-[0.9]">Live.<br>Study.<br><span class="text-[#E8C48A]">Belong.</span></h1>
+<p class="text-[#E8C48A] text-xs tracking-[0.2em] mt-5 font-bold">LUXURY HOSTEL FOR MODERN STUDENTS</p>
+<p class="text-zinc-400 text-[13px] mt-4 max-w-md leading-relaxed">Premium hostel life in the heart of campus. Real dosto ki real kahaniya, ab official website pe. 500+ students ka bharosa, 4.9 rating.</p>
+<div class="flex gap-3 mt-8"><a href="rooms.html" class="bg-[#E8C48A] text-black px-7 py-3.5 rounded-full text-sm font-bold">Explore Rooms →</a><a href="gallery.html" class="border border-white/20 px-7 py-3.5 rounded-full text-sm">Virtual Tour</a></div>
+<div class="flex gap-2 mt-10 flex-wrap"><div class="bg-white/[0.04] border border-white/10 rounded-full px-4 py-2.5 text-[11px]">🏠 500+ Residents</div><div class="bg-white/[0.04] border border-white/10 rounded-full px-4 py-2.5 text-[11px]">⭐ 4.9/5 Rating</div><div class="bg-white/[0.04] border border-white/10 rounded-full px-4 py-2.5 text-[11px]">🛡️ 24/7 Support</div></div>
+<div class="mt-10 rounded-[24px] overflow-hidden border border-[#E8C48A]/20 p-1.5 bg-white/[0.03]"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800" class="rounded-[18px] w-full h-[380px] object-cover"></div>
 </div>
 
-<script>function openMenu(){document.getElementById('menu').classList.remove('hidden')}function closeMenu(){document.getElementById('menu').classList.add('hidden')}</script>
-
-<!-- TERA PURANA HOME CONTENT SAME RAHEGA -->
-<div class="px-6 pt-12 pb-10 max-w-7xl mx-auto"><h1 class="text-6xl font-extrabold leading-[0.9]">Live.<br>Study.<br><span class="text-[#E8C48A]">Belong.</span></h1><p class="text-[#E8C48A] text-xs tracking-[0.2em] mt-4 font-bold">LUXURY HOSTEL FOR MODERN STUDENTS</p><p class="text-zinc-400 text-[13px] mt-4 max-w-md">Premium hostel life in the heart of campus. Real dosto ki real kahaniya, ab official website pe. 500+ students ka bharosa, 4.9 rating.</p><div class="flex gap-3 mt-8"><a href="rooms.html" class="bg-[#E8C48A] text-black px-6 py-3 rounded-full text-sm font-bold">Explore Rooms →</a><a href="gallery.html" class="border border-white/20 px-6 py-3 rounded-full text-sm">Virtual Tour</a></div><div class="flex gap-2 mt-8"><div class="bg-white/5 border border-white/10 rounded-full px-4 py-2.5 text-[11px]">🏠 500+ Residents</div><div class="bg-white/5 border border-white/10 rounded-full px-4 py-2.5 text-[11px]">⭐ 4.9/5 Rating</div><div class="bg-white/5 border border-white/10 rounded-full px-4 py-2.5 text-[11px]">🛡️ 24/7 Support</div></div><div class="mt-8 rounded-[20px] overflow-hidden border border-[#E8C48A]/20 p-1.5 bg-white/5"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800" class="rounded-[14px] w-full h-[360px] object-cover"></div></div>
 </body></html>
